@@ -10,7 +10,7 @@ bashrc switches the PHP cli version as configured in your ``.php-version``.
 2/ Then get the latest version from github and profit:
 
 ```shell
-wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/master/.bashrc -O $HOME/.bashrc
+wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/main/.bashrc -O $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
@@ -22,5 +22,5 @@ In it, juste write the PHP version you want to use : 8.0 or 7.4  or 7.3 or 5.6
 Also, you can use the ``.bash_profile`` file given here, wich will sho you in the prompte the PHP cli version used, and also gave you some colors ;-)
 
 ```shell
-wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/master/.bash_profile -O $HOME/.bash_profile
+wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/main/.bash_profile -O $HOME/.bash_profile
 ```
