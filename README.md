@@ -24,3 +24,7 @@ Also, you can use the ``.bash_profile`` file given here, wich will sho you in th
 ```shell
 wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/main/.bash_profile -O $HOME/.bash_profile
 ```
+
+## At last
+You may have to close your SSH connection and connect again.
+You can check the changes by navigating in your folder where you have write ``.php-version`` file : your prompt has to indicate you the PHP cli version used, and you can verify it by tiping ``php -v``
