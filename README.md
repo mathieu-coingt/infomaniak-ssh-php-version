@@ -1,24 +1,30 @@
-# INFOMANIAK webhosting bashrc
+# Infomaniak webhosting bashrc
 
-INFOMANIAK webhosting offers SSH access to your account. This
-bashrc switches the PHP cli version as configured in your ``.php-version``.
+Infomaniak webhosting offers SSH access to your account.
+
+This ``.bashrc`` switches the **PHP cli version** as configured in your ``.php-version``.
 
 ## How to use it
 
-1/ To install this ``.bashrc``, open an SSH connexion to your webhosting account
+1/ To install this ``.bashrc``, open an SSH connexion to your webhosting account.
 
-2/ Then get the latest version from github and profit:
+2/ Then get the latest version from github and profit :
 
 ```shell
 wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version/main/.bashrc -O $HOME/.bashrc
 ```
-
 ```shell
 source $HOME/.bashrc
 ```
 
-3/ Finally, you have to create ``.php-version`` file in your folders where you want to change you PHP cli version.
-In it, juste write the PHP version you want to use : 8.0 or 7.4  or 7.3 or 5.6
+3/ Finally, you have to create a ``.php-version`` file in your folders where you want to change you PHP cli version : [see exemple in this repository](.php-version).
+
+Just write in this file the PHP version you want to use. Possible values are the one you can choose in your Infomaniak manager :
+* 8.0
+* 7.4
+* 7.3
+* 7.2
+* 5.6
 
 ## Enhanced the prompt
 
@@ -31,3 +37,11 @@ wget https://raw.githubusercontent.com/mathieu-coingt/infomaniak-ssh-php-version
 ## How to test it
 You may have to close your SSH connection and connect again.
 You can check the changes by navigating in your folder where you have write ``.php-version`` file : your prompt has to indicate you the PHP cli version used, and you can verify it by tiping ``php -v``
+
+## Result expected
+
+### Before
+![image](bash-before.png)
+
+### After
+![image](bash-after.png)
